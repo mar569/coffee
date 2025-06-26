@@ -54,6 +54,7 @@ export const Header: React.FC = React.memo(() => {
                             Получить оптовый прайс
                         </a>
                     </button>
+
                 </div>
             </div>
         </header>

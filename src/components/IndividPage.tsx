@@ -2,6 +2,15 @@ import React from 'react';
 import individImage from '../assets/absolute/fon_coffee.png';
 
 export const IndividPage: React.FC = () => {
+    const scrollToSection = (sectionId: string) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    };
     return (
         <section className='max-w-[1920px] mx-auto'>
             <div className='container'>
@@ -10,7 +19,7 @@ export const IndividPage: React.FC = () => {
                         width: '100%',
                         height: '638.773px',
                         backgroundImage: `url(${individImage})`,
-                        boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
+                        boxShadow: '1px 4px 40px rgba(4, 38, 10, 0.4)',
                         backgroundSize: 'cover',
                         backgroundRepeat: 'no-repeat',
                         backgroundPosition: 'center',
@@ -48,8 +57,9 @@ export const IndividPage: React.FC = () => {
                             </p>
                         </div>
                         <div>
-                            <button className='border cursor-pointer border-white text-[16px] px-15 py-3 rounded-xl hover:bg-white/10 transition-all duration-300 sm:active:bg-white/20 sm:active:scale-95'>
-                                <a href="#form-optom" target="_blank"></a>Свяжитесь с нами</button>
+                            <a className='border cursor-pointer border-white text-[16px] px-15 py-3 rounded-xl hover:bg-white/10 transition-all duration-300 sm:active:bg-white/20 sm:active:scale-95'
+                                href="#form-opto"
+                                onClick={(e) => { e.preventDefault(); scrollToSection('form-opto'); }}> Свяжитесь с нами</a>
                         </div>
                     </div>
                 </div>

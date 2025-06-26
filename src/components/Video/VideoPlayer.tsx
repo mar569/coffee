@@ -43,7 +43,7 @@ export const VideoPlayer: React.FC<IVideoPlayerProps> = ({
                 </div>
 
                 {isModalOpen && ReactDOM.createPortal(
-                    <div className="fixed inset-0 flex items-center justify-center z-50 bg-black/90 p-4">
+                    <div className="fixed inset-0 flex items-center justify-center z-10 bg-black/90 p-14">
                         <div className="relative max-w-4xl">
                             <button
                                 onClick={closeModal}

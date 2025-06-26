@@ -10,7 +10,7 @@ export const Quality: React.FC = () => {
                         width: '100%',
                         height: '638.773px',
                         backgroundImage: `url(${qualityImage})`,
-                        boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
+                        boxShadow: '4px 30px 80px rgba(4, 38, 10, 0.4)',
                         backgroundSize: 'cover',
                         backgroundRepeat: 'no-repeat',
                         borderRadius: '12px',

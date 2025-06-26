@@ -10,7 +10,7 @@ export const Price: React.FC = () => {
                         width: '100%',
                         height: '638.773px',
                         backgroundImage: `url(${coffeePrice})`,
-                        boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
+                        boxShadow: '1px 20px 40px rgba(4, 38, 10, 0.2)',
                         backgroundSize: 'cover',
                         backgroundRepeat: 'no-repeat',
                         backgroundPosition: 'center',

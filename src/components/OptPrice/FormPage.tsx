@@ -5,7 +5,7 @@ import RightCol from './RightCol';
 
 export function FormPage() {
     return (
-        <div className='w-full rounded-2xl bg-[#19161CCC] flex flex-col md:flex-row relative'>
+        <div className='w-full rounded-2xl bg-[#110f13cc] flex flex-col md:flex-row relative'>
             <div
                 style={{
                     backgroundImage: `url(${wing})`,

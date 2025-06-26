@@ -8,34 +8,33 @@ interface ModalProps {
     product: Product;
     onClose: () => void;
 }
-
 export const Modal: React.FC<ModalProps> = React.memo(({ product, onClose }) => {
     return (
         <div
             className="fixed inset-0 bg-black/90 flex items-center justify-center z-50 p-2 sm:p-4 md:p-6 transition-opacity duration-300 ease-in-out"
-            onClick={onClose} // Закрытие модалки при клике на фон
+            onClick={onClose}
         >
             <div
-                className="bg-black/50 rounded-xl w-full max-w-3xl mx-auto max-h-[80vh] overflow-hidden relative"
-                onClick={(e) => e.stopPropagation()} // Остановка всплытия события, чтобы не закрывать модалку при клике внутри
+                className="bg-black/60 rounded-xl w-full max-w-[70%] md:max-w-[600px] max-h-[90vh] md:max-h-[80vh] relative "
+                onClick={(e) => e.stopPropagation()}
             >
                 <button
                     onClick={onClose}
-                    className="absolute top-2 right-2 sm:top-4 sm:right-4 text-gray-800 hover:text-gray-900 transition-colors z-10"
+                    className="absolute  top-0 right-0 sm:top-4 sm:right-4 text-gray-400 hover:text-gray-900 transition-colors z-10"
                 >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
 
-                <div className="p-4 sm:p-6 md:p-8">
-                    <figure className="relative h-68 sm:h-84 mb-4 sm:mb-6 p-2 rounded-lg overflow-hidden">
+                <div className="p-2 sm:p-6 md:p-8 ">
+                    <figure className="relative h-60 sm:h-84 mb-4 sm:mb-6 p-2 mt-3 rounded-lg overflow-hidden">
                         <img
                             src={product.image}
                             alt={product.subtitle}
                             className="w-full h-full object-cover blur-[2px]"
                         />
-                        <div className="absolute inset-4 rounded-2xl bg-black/10 flex items-center justify-center p-4" />
+                        <div className="absolute inset-0 rounded-2xl flex items-center justify-center p-4" />
                     </figure>
 
                     <div className="mb-4 sm:mb-6 text-center">
@@ -44,7 +43,7 @@ export const Modal: React.FC<ModalProps> = React.memo(({ product, onClose }) => 
                         </h3>
                     </div>
 
-                    <div className="text-sm sm:text-base space-y-2 sm:space-y-3 mb-6 sm:mb-8">
+                    <div className="text-sm sm:text-base space-y-1 sm:space-y-3 mb-4 sm:mb-8">
                         <p><strong>Состав:</strong> {product.description}</p>
                         <p><strong>Условия хранения:</strong> {product.storage}</p>
                         <p><strong>Срок годности:</strong> {product.shelfLife}</p>
