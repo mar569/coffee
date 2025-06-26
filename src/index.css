@@ -1,0 +1,148 @@
+@import 'tailwindcss';
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  overflow-x: hidden;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+}
+
+.header {
+  /*     max-width: 1718px;
+    width: 100%; */
+  width: 100%;
+  height: 100vb;
+}
+
+.header__wrapper-link {
+  width: max-content;
+}
+
+.header__wrapper-link a {
+  color: #fff;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  font-size: 15px;
+  font-style: normal;
+
+  font-weight: 700;
+  line-height: 20px; /* 133.333% */
+
+  height: 100%;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.header__wrapper-link {
+  border-radius: 24px;
+  background: #000;
+
+  max-width: 294px;
+  width: 100%;
+  height: 49.3px;
+}
+
+.header__nav-list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.header__nav-list li {
+  text-align: center;
+
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+
+  line-height: 27.3px; /* 160.588% */
+}
+
+.header__nav-list li a {
+  transition: all 0.5s ease;
+  color: #848895;
+}
+
+.header__nav-list li:nth-child(2) a {
+  padding-left: 21px;
+  padding-right: 21px;
+}
+
+.header__nav-list li:nth-child(1) a {
+  padding-right: 21px;
+  padding-left: 21px;
+}
+
+.header__nav-list li:nth-child(3) a {
+  padding-left: 21px;
+}
+
+.header__nav-list li a:hover {
+  background: radial-gradient(
+    25.88% 97.53% at 50% 50%,
+    #bf8836 0%,
+    #f2de8a 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header {
+  background: url(assets/absolute/Site-Rey.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 1920px;
+  width: 100%;
+  padding-left: 49px;
+  padding-right: 44px;
+  margin: 0;
+}
