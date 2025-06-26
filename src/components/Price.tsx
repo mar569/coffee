@@ -6,16 +6,10 @@ export const Price: React.FC = () => {
         <section className='max-w-[1920px] mx-auto'>
             <div className='container'>
                 <div
+                    className='w-full h-[638.773px] bg-cover bg-no-repeat bg-center rounded-[12px] bg-blend-screen'
                     style={{
-                        width: '100%',
-                        height: '638.773px',
                         backgroundImage: `url(${coffeePrice})`,
-                        boxShadow: '1px 20px 40px rgba(4, 38, 10, 0.2)',
-                        backgroundSize: 'cover',
-                        backgroundRepeat: 'no-repeat',
-                        backgroundPosition: 'center',
-                        borderRadius: '12px',
-                        backgroundBlendMode: 'screen',
+                        boxShadow: '10px 40px 80px rgba(4, 38, 10, 0.2)',
                         position: 'relative',
                         display: 'flex',
                         justifyContent: 'flex-end',
@@ -28,7 +22,6 @@ export const Price: React.FC = () => {
                             style={{
                                 fontSize: '28px',
                                 lineHeight: '32px',
-
                             }}
                         >
                             Выгодная цена
@@ -36,7 +29,7 @@ export const Price: React.FC = () => {
 
                         <div style={{ maxWidth: '100%' }}>
                             <p
-                                className=' text-[17px] md:text-[28px] pb-[62px] leading-[18px] md:leading-[29px]'
+                                className='text-[17px] md:text-[28px] pb-[62px] leading-[18px] md:leading-[29px]'
                             >
                                 Собственное производство и прямые поставки <br /> сырья от надежных производителей создают <br /> основу для наших преимущественных цен как в <br /> розницу, так и оптом.
                                 Наша способность <br /> контролировать каждый этап производства и <br /> обеспечивать значительные объемы дает нам <br /> возможность предлагать вам выгодные тарифы, <br />

@@ -6,15 +6,10 @@ export const Quality: React.FC = () => {
         <section className='max-w-[1920px] mx-auto'>
             <div className='container'>
                 <div
+                    className='w-full h-[638.773px] bg-cover bg-no-repeat rounded-[12px] bg-blend-screen'
                     style={{
-                        width: '100%',
-                        height: '638.773px',
                         backgroundImage: `url(${qualityImage})`,
-                        boxShadow: '4px 30px 80px rgba(4, 38, 10, 0.4)',
-                        backgroundSize: 'cover',
-                        backgroundRepeat: 'no-repeat',
-                        borderRadius: '12px',
-                        backgroundBlendMode: 'screen',
+                        boxShadow: '4px 30px 80px rgba(4, 38, 10, 0.4)', // Темно-зеленая тень
                         position: 'relative',
                         display: 'flex',
                         flexDirection: 'column',
@@ -35,8 +30,7 @@ export const Quality: React.FC = () => {
                     </div>
                     <div style={{ padding: '0 20px', maxWidth: '100%' }}>
                         <p
-                            className='text-center text-[17x] md:text-[28px] leading-[16px] md:leading-[29px]'
-
+                            className='text-center text-[17px] md:text-[28px] leading-[16px] md:leading-[29px]'
                         >
                             На нашем производстве мы используем передовые технологии обжарки зерна, которые обеспечивают <br />
                             полный контроль над ароматом, текстурой и вкусом. Контроль качества обжарки на каждом этапе. <br />
@@ -44,7 +38,6 @@ export const Quality: React.FC = () => {
                         </p>
                     </div>
                 </div>
-
             </div>
         </section>
     );
