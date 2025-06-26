@@ -19,12 +19,12 @@ export const IndividPage: React.FC = () => {
                     className='w-full h-[638.773px] bg-cover bg-no-repeat bg-center rounded-[12px] bg-blend-screen'
                     style={{
                         backgroundImage: `url(${individImage})`,
-                        boxShadow: '1px 4px 40px rgba(4, 38, 10, 0.4)', // Тень
+                        boxShadow: '1px 4px 40px rgba(4, 38, 10, 0.4)',
                     }}
                 >
-                    <div className='pt-[59px] pl-[30px] pr-[30px] md:pt-[102px] md:pl-[130px] md:pr-[113px]'>
+                    <div className='pt-[50px] pl-[30px] pr-[30px] md:pt-[80px] md:pl-[130px] md:pr-[113px]'>
                         <h2
-                            className='font-bold pt-[14px] md:pt-[10px] pb-[53px] w-[250px] md:w-full'
+                            className='font-bold pt-[10px] md:pt-[8px] pb-[53px] w-[250px] md:w-full'
                             style={{
                                 fontSize: '28px',
                                 lineHeight: '32px',
@@ -36,7 +36,7 @@ export const IndividPage: React.FC = () => {
 
                         <div style={{ maxWidth: '100%' }}>
                             <p
-                                className='text-left text-[17px] md:text-[28px] pb-[62px] leading-[18px] md:leading-[29px]'
+                                className='text-left text-[17px] md:text-[28px] pb-[48px] leading-[18px] md:leading-[29px]'
                             >
                                 В центре нашей философии лежит индивидуальность.
                                 Мы приглашаем вас <br /> в мир гибкого и индивидуального партнерства.
