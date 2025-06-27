@@ -188,7 +188,7 @@ body {
   opacity: 0;
   visibility: hidden;
   transform: translateX(100%);
-  rotate: 180deg;
+  rotate: -180deg;
   transition: all 1.3s ease;
   border: none;
   outline: none;
