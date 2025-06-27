@@ -27,7 +27,7 @@ export const Header: React.FC = React.memo(() => {
                                 <a
                                     href="#product"
                                     onClick={(e) => { e.preventDefault(); scrollToSection('product'); }}
-                                    className='header__list-link'
+                                    className='header__list-link text-[22px] md:text-[26px]'
                                 >
                                     Наш товар
                                 </a>
@@ -36,7 +36,7 @@ export const Header: React.FC = React.memo(() => {
                                 <a
                                     href="#form-opto"
                                     onClick={(e) => { e.preventDefault(); scrollToSection('form-opto'); }}
-                                    className='header__list-link'
+                                    className='header__list-link text-[22px] md:text-[26px]'
                                 >
                                     Получить прайс
                                 </a>
@@ -45,16 +45,12 @@ export const Header: React.FC = React.memo(() => {
                     </div>
                 </div>
                 <div className='pb-[41px] justify-center flex'>
-                    <button className='bg-[#010100] cursor-pointer hover:bg-[#ded6b349] text-white font-bold text-[15px] line-through-[20px] rounded-4xl transition-all ease h-12 w-74 duration-500 transform hover:scale-105'>
-                        <a
-                            href="#form-opto"
-                            onClick={(e) => { e.preventDefault(); scrollToSection('form-opto'); }}
-                            className='header__link-item'
-                        >
-                            Получить оптовый прайс
-                        </a>
+                    <button
+                        onClick={() => scrollToSection('form-opto')}
+                        className='border border-[#6c6d6b] cursor-pointer hover:bg-[#ded6b349] text-black font-bold text-[20px] md:text-[24px] line-through-[20px] rounded-4xl transition-all ease h-12 w-74 duration-500 transform hover:scale-105'
+                    >
+                        Получить оптовый прайс
                     </button>
-
                 </div>
             </div>
         </header>

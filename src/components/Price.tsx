@@ -18,7 +18,7 @@ export const Price: React.FC = () => {
                 >
                     <div className='pt-[59px] pr-[30px] pl-[30px] md:pt-[102px] md:pr-[113px] md:pl-[113px]'>
                         <h2
-                            className='font-bold pb-[53px] w-[250px] md:w-full'
+                            className='font-bold text-[#EBF5E4] pb-[53px] w-[250px] md:w-full'
                             style={{
                                 fontSize: '28px',
                                 lineHeight: '32px',
@@ -29,7 +29,7 @@ export const Price: React.FC = () => {
 
                         <div style={{ maxWidth: '100%' }}>
                             <p
-                                className='text-[17px] md:text-[28px] pb-[62px] leading-[18px] md:leading-[29px]'
+                                className='text-[17px] text-[#EBF5E4] md:text-[28px] pb-[62px] leading-[18px] md:leading-[29px]'
                             >
                                 Собственное производство и прямые поставки <br /> сырья от надежных производителей создают <br /> основу для наших преимущественных цен как в <br /> розницу, так и оптом.
                                 Наша способность <br /> контролировать каждый этап производства и <br /> обеспечивать значительные объемы дает нам <br /> возможность предлагать вам выгодные тарифы, <br />

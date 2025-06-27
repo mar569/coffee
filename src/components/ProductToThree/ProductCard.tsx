@@ -8,16 +8,19 @@ interface ProductCardProps {
 
 export const ProductCard: React.FC<ProductCardProps> = React.memo(({ product, onOpen }) => {
     const [isActive, setIsActive] = useState(false);
+    const [isButtonPressed, setIsButtonPressed] = useState(false);
     const cardRef = useRef<HTMLDivElement>(null);
+
     const handleInteractionStart = () => setIsActive(true);
     const handleInteractionEnd = () => setIsActive(false);
+
+    const handleButtonPressStart = () => setIsButtonPressed(true);
+    const handleButtonPressEnd = () => setIsButtonPressed(false);
 
     return (
         <div
             ref={cardRef}
-            className={`rounded-4xl overflow-hidden relative h-full transition-shadow duration-300 ${isActive ? 'shadow-md shadow-[#3E5912]' : ''
-                }`}
-
+            className={`rounded-4xl overflow-hidden relative h-full transition-shadow duration-300 ${isActive ? 'shadow-md shadow-[#3E5912]' : ''}`}
             onMouseEnter={handleInteractionStart}
             onMouseLeave={handleInteractionEnd}
             onTouchStart={handleInteractionStart}
@@ -34,7 +37,11 @@ export const ProductCard: React.FC<ProductCardProps> = React.memo(({ product, on
                 <div className="absolute bottom-12 left-0 right-0 flex justify-center">
                     <button
                         onClick={() => onOpen(product.id)}
-                        className="border cursor-pointer border-white bg-white/10 text-white px-12 py-3 rounded-2xl hover:bg-white/40 transition-all duration-300 sm:active:bg-white/20 sm:active:scale-95"
+                        onTouchStart={handleButtonPressStart}
+                        onTouchEnd={handleButtonPressEnd}
+                        onMouseDown={handleButtonPressStart}
+                        onMouseUp={handleButtonPressEnd}
+                        className={`border cursor-pointer bg-[#B9C4AD] opacity-50 border-black text-[#000000] text-[20px] md:text-[16px] px-12 py-3 rounded-2xl transition-all duration-500 ${isButtonPressed ? 'scale-95 bg-white/40' : 'hover:bg-white/40'}`}
                     >
                         Подробнее
                     </button>

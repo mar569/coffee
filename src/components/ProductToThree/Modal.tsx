@@ -38,12 +38,12 @@ export const Modal: React.FC<ModalProps> = React.memo(({ product, onClose }) => 
                     </figure>
 
                     <div className="mb-4 sm:mb-6 text-center">
-                        <h3 className="text-lg sm:text-xl font-medium ">
+                        <h3 className="text-lg sm:text-xl font-medium text-[#bcc9ba] ">
                             {product.subtitle}
                         </h3>
                     </div>
 
-                    <div className="text-sm sm:text-base space-y-1 sm:space-y-3 mb-4 sm:mb-8">
+                    <div className="text-sm sm:text-base space-y-1 sm:space-y-3 mb-4 sm:mb-8 text-[#bcc9ba]">
                         <p><strong>Состав:</strong> {product.description}</p>
                         <p><strong>Условия хранения:</strong> {product.storage}</p>
                         <p><strong>Срок годности:</strong> {product.shelfLife}</p>
@@ -51,22 +51,25 @@ export const Modal: React.FC<ModalProps> = React.memo(({ product, onClose }) => 
                         <p><strong>Стандарт:</strong> {product.gost}</p>
                     </div>
 
-                    <div className="grid grid-cols-1 gap-3 sm:gap-4 ">
-                        <a href={product.links.ozon} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 py-2 sm:py-3 px-3 sm:px-4 bg-transparent hover:bg-white/20 shadow-md hover:shadow-[#3E5912] text-white hover:text-black rounded-2xl transition-colors border-1 border-[#fff] duration-700">
-                            <span>Купить на</span>
+                    <div className="grid grid-cols-1 gap-3 sm:gap-4  ">
+                        <a href={product.links.ozon} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 py-2 sm:py-3 px-3 sm:px-4 bg-black/90  shadow-md hover:shadow-[#3E5912] rounded-2xl border-1 border-[#999] duration-700">
+                            <span className=' text-transparent bg-clip-text
+                bg-gradient-to-r from-white to-[#2036C7]'>Купить на</span>
                             <img src={OzonIcon} alt="Ozon" className="h-4 " />
                         </a>
-                        <a href={product.links.wildberries} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 py-2 sm:py-3 px-3 sm:px-4 bg-transparent hover:bg-white/20 shadow-md hover:shadow-[#3E5912] text-white hover:text-black rounded-2xl transition-colors border-1 border-[#fff] duration-700">
-                            <span>Купить на</span>
+                        <a href={product.links.wildberries} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 py-2 sm:py-3 px-3 sm:px-4 bg-black/90 shadow-md hover:shadow-[#3E5912] rounded-2xl border-1 border-[#999] duration-700">
+                            <span className='text-transparent bg-clip-text
+                bg-gradient-to-r from-[#D1BEBE] to-[#8B40BD]'>Купить на</span>
                             <img src={WBIcon} alt="Wildberries" className="h-4 " />
                         </a>
-                        <a href={product.links.yandex} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 py-2 sm:py-3 px-3 sm:px-4 bg-transparent hover:bg-white/20 shadow-md hover:shadow-[#3E5912] text-white hover:text-black rounded-2xl transition-colors border-1 border-[#fff] duration-700">
-                            <span>Купить на</span>
+                        <a href={product.links.yandex} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 py-2 sm:py-3 px-3 sm:px-4 bg-black/90 shadow-md hover:shadow-[#3E5912]  rounded-2xl border-1 border-[#999] duration-700">
+                            <span className='text-transparent bg-clip-text
+                bg-gradient-to-r from-[#911919] to-[#f7f7f7]'>Купить на</span>
                             <img src={YandexIcon} alt="Yandex" className="h-4 " />
                         </a>
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 });

@@ -54,14 +54,14 @@ export default function RightCol() {
     return (
         <form className='flex flex-col mt-4 md:flex-row w-full max-w-[966px] justify-between items-center' onSubmit={handleSubmit}>
             <div className='max-w-[402px] w-full mb-4 md:mb-0'>
-                <h2 className='font-bold text-[28px] md:text-4xl pb-4'>ПРЕДЛОЖЕНИЕ <br />
+                <h2 className='font-bold text-[#EBF5E4] text-[24px] md:text-4xl pb-4'>ПРЕДЛОЖЕНИЕ <br />
                     ДЛЯ КОРПОРАТИВНЫХ <br /> КЛИЕНТОВ</h2>
                 <p className='text-[#F8E4BECC] text-[20px] md:text-[28px] leading-[18px] md:leading-[28px]'>Индивидуальные условия! <br /> Для бизнеса, для офисов, <br /> ресторанов, кофеен, отелей</p>
             </div>
 
             <div className='flex flex-col w-full max-w-[488px]'>
                 <input
-                    className='bg-[#19161C]  cursor-pointer border border-[#19161C] text-center p-3 mb-6 rounded-xl'
+                    className='bg-[#19161C]  cursor-pointer border border-[#b0adb3] text-center text-[#aebba3] p-3 mb-6 rounded-xl'
                     name="name"
                     placeholder="ИМЯ"
                     value={formData.name}
@@ -71,7 +71,7 @@ export default function RightCol() {
                 {errors.name && <span className='text-red-500'>{errors.name}</span>}
 
                 <input
-                    className='bg-[#19161C]  cursor-pointer border border-[#19161C] text-center p-3 mb-6 rounded-xl'
+                    className='bg-[#19161C]  cursor-pointer border border-[#b0adb3] text-center text-[#aebba3] p-3 mb-6 rounded-xl'
                     type="email"
                     name="email"
                     placeholder="E-MAIL"
@@ -82,7 +82,7 @@ export default function RightCol() {
                 {errors.email && <span className='text-red-500'>{errors.email}</span>}
 
                 <input
-                    className='bg-[#19161C]  cursor-pointer border border-[#19161C] text-center p-3 mb-6 rounded-xl'
+                    className='bg-[#19161C]  cursor-pointer border border-[#b0adb3] text-center text-[#aebba3] p-3 mb-6 rounded-xl'
                     type="tel"
                     name="phone"
                     placeholder="ТЕЛЕФОН"
@@ -93,8 +93,9 @@ export default function RightCol() {
                 {errors.phone && <span className='text-red-500'>{errors.phone}</span>}
 
                 <div className='mb-5'>
-                    <label className='leading-[10px] md:leading-[14px] text-sm  cursor-pointer'>
+                    <label className='leading-[10px] text-[#d3dfc8] md:leading-[14px] text-sm  cursor-pointer'>
                         <input
+                            className='mr-2'
                             type="checkbox"
                             name="polit"
                             checked={formData.polit}
@@ -105,7 +106,7 @@ export default function RightCol() {
                     {errors.polit && <span className='text-red-500'>{errors.polit}</span>}
                 </div>
 
-                <button className='border border-[#ffffff] text-center p-4 rounded-xl  cursor-pointer' type="submit">ПОЛУЧИТЬ ОПТОВЫЙ ПРАЙС</button>
+                <button className='border border-[#ffffff] bg-[#211b25] text-center text-[#abaea4] p-4 rounded-xl  cursor-pointer' type="submit">ПОЛУЧИТЬ ОПТОВЫЙ ПРАЙС</button>
             </div>
             <ToastContainer />
         </form>
