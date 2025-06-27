@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import logoImage from '../assets/logo/logo-header.svg';
-import arrowUpIcon from '../assets/logo/arrow-bottom-long.svg';
+import arrowUpIcon from '../assets/logo/arrow-top-icon.svg';
 
 export function Footer() {
     const [isVisible, setIsVisible] = useState(false);

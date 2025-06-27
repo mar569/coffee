@@ -188,16 +188,15 @@ body {
   opacity: 0;
   visibility: hidden;
   transform: translateX(100%);
-
   transition: all 1.3s ease;
   border: none;
   outline: none;
-  box-shadow: 0 4px 6px rgba(74, 73, 35, 0.8);
+  box-shadow: 0 1px 20px rgba(74, 73, 35, 0.8);
 }
 
 .scroll-top-btn:hover {
-  background-color: #191329;
-  box-shadow: 0 8px 8px rgba(165, 122, 218, 0.4);
+  background-color: #554c6c;
+  box-shadow: 0 8px 30px rgba(165, 122, 218, 0.4);
   transform: scale(1.05) translateX(70%);
 }
 
